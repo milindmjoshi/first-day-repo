@@ -14,12 +14,18 @@
     <main>
         <p>This is the starter index.html for your bootcamp project.</p>
         <button id="logBtn">Log a message</button>
+        <button id="clickMeBtn">Click Me</button>
     </main>
 
     <script>
         document.getElementById('logBtn').addEventListener('click', () => {
             console.log('Hello from index.html');
             alert('Check the console (F12) for a message.');
+        });
+
+        // New button handler
+        document.getElementById('clickMeBtn').addEventListener('click', () => {
+            alert('You clicked me fool');
         });
     </script>
 </body>
